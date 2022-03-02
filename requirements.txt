@@ -1,2 +1,3 @@
 parser-libraries
 tk-tools
+mypy
