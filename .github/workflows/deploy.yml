@@ -16,7 +16,7 @@ env:
   ECS_SERVICE: nginx-service                 # set this to your Amazon ECS service name
   ECS_CLUSTER: default                # set this to your Amazon ECS cluster name
   ECS_TASK_DEFINITION: MY_ECS_TASK_DEFINITION
-  MY_ECS_TASK_DEFINITION: https://ap-south-1.console.aws.amazon.com/ecs/home?region=ap-south-1#/taskDefinitions/first-run-task-definition/2 # set this to the path to your Amazon ECS task definition
+  MY_ECS_TASK_DEFINITION: task-definition.json # set this to the path to your Amazon ECS task definition
                                                # file, e.g. .aws/task-definition.json
   CONTAINER_NAME: nginx           # set this to the name of the container in the
                                                # containerDefinitions section of your task definition
