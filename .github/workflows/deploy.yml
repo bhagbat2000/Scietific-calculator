@@ -61,10 +61,11 @@ jobs:
           container-name: ${{ env.CONTAINER_NAME }}
           image: ${{ steps.build-image.outputs.image }}
 
-      - name: Amazon ECS "Deploy Task Definition" Action for GitHub Actions
-        uses: aws-actions/amazon-ecs-deploy-task-definition@de0132cf8cdedb79975c6d42b77eb7ea193cf28e
-        with:
-          task-definition: ${{ steps.task-def.outputs.task-definition }}
-          service: ${{ env.ECS_SERVICE }}
-          cluster: ${{ env.ECS_CLUSTER }}
-          wait-for-service-stability: true
+     # - name: Amazon ECS "Deploy Task Definition" Action for GitHub Actions
+      #  uses: aws-actions/amazon-ecs-deploy-task-definition@de0132cf8cdedb79975c6d42b77eb7ea193cf28e
+       # with:
+         # task-definition: ${{ steps.task-def.outputs.task-definition }}
+         # service: ${{ env.ECS_SERVICE }}
+          #cluster: ${{ env.ECS_CLUSTER }}
+         # wait-for-service-stability: true
+          
