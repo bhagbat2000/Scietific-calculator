@@ -1,6 +1,6 @@
 # This workflow uses actions that are not certified by GitHub
 # They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
+# separate terms of service, privacy policy, and support.
 # documentation.
 
 name: Deploy to Amazon ECS
@@ -14,7 +14,7 @@ env:
   AWS_REGION: ap-south-1                   # set this to your preferred AWS region, e.g. us-west-1
   ECR_REPOSITORY: githubaction1           # set this to your Amazon ECR repository name
   ECS_SERVICE: nginx-service                 # set this to your Amazon ECS service name
-  ECS_CLUSTER: default                # set this to your Amazon ECS cluster name
+  ECS_CLUSTER: nginx                # set this to your Amazon ECS cluster name
   ECS_TASK_DEFINITION: .aws/task-definition.json # set this to the path to your Amazon ECS task definition
                                                # file, e.g. .aws/task-definition.json
   CONTAINER_NAME: nginx           # set this to the name of the container in the
