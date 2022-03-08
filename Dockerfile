@@ -3,4 +3,4 @@ ADD . /code
 WORKDIR /code
 RUN pip install -r requirements.txt
 ENTRYPOINT ["bash","entrypoint.prod.sh"]
-CMD ["python","CALCULATOR_TKINTER.ipynb"]
+CMD ["python","CALCULATOR_TKINTER.py"]
